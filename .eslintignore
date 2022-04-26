@@ -1,0 +1,16 @@
+/build/*
+/dist/*
+/dev/mud/*
+/node_modules/*
+/styles/*
+/temp/*
+.editorconfig
+.env
+.env.example
+.gitignore
+.prettierignore
+.idea
+.gitkeep
+commitlint.config.js
+.vscode/
+*.log

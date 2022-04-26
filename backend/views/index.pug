@@ -1,0 +1,46 @@
+extends layout.pug
+
+block content main
+  //- step 1
+  input#step1(type="radio", name="steps", checked)
+  .step-item
+    .slds-form.slds-m-around--medium
+      ul#record-type-list.slds-dropdown__list.slds-dropdown--length-4(
+        role="menu"
+      )
+        each role in roles
+          li.slds-dropdown__item(data-id=`${role.id}`, role="menuitem") #{ role.name }
+
+  //- step 2
+  input#step2(type="radio", name="steps")
+  .step-item
+    .slds-form.slds-m-around--medium
+      div FirstName and LastName are required fields.
+      article.slds-m-top_x-large
+        h2 Select contact fields:
+        ul#contact-field-list.slds-dropdown__list.slds-dropdown--length-4.slds-m-top--small(
+          role="menu"
+        )
+    //- <form name="new_contact">
+    //-   <div class="slds-form-element">
+    //-     <label class="slds-form-element__label" for="firstName">
+    //-       <abbr class="slds-required" title="required">* </abbr>First Name
+    //-     </label>
+    //-     <div class="slds-form-element__control">
+    //-       <input type="text" id="firstName" name="firstName" placeholder="First Name" required="" class="slds-input" value="TestJoe" />
+    //-     </div>
+    //-   </div>
+    //-   <div class="slds-form-element">
+    //-     <label class="slds-form-element__label" for="lastName">
+    //-       <abbr class="slds-required" title="required">* </abbr>Last Name
+    //-     </label>
+    //-     <div class="slds-form-element__control">
+    //-       <input type="text" id="lastName" name="lastName" placeholder="Last Name" required="" class="slds-input" value="TestDoe" />
+    //-     </div>
+    //-   </div>
+    //- </form>
+
+  //- <div class="slds-docked-form-footer" style="justify-content: flex-end">
+  //-   <button id="cancel" type="button" class="slds-button slds-button_neutral">Cancel</button>
+  //-   <button id="done" disabled type="button" class="slds-button slds-button_brand slds-m-right--medium">Done</button>
+  //- </div>

@@ -1,0 +1,26 @@
+:root {
+  background: #fff;
+  font-family: "Salesforce Sans", Arial, sans-serif;
+}
+
+.slds-dropdown__item {
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+}
+
+.slds-is-selected {
+  background-color: #e8f3f9;
+}
+
+input[type="radio"][name="steps"] {
+  display: none;
+}
+
+input[type="radio"]:not(:checked) + .step-item {
+  display: none;
+}
+
+.logo-sf {
+  background-image: url("/images/sf-logo.svg");
+  width: 2.5rem;
+}

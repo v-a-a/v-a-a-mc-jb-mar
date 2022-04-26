@@ -1,0 +1,44 @@
+# WEBPACK
+dist
+
+.env
+
+# NODE/NPM/GRUNT
+node_modules
+npm-debug.log
+.npm-debug.log
+
+# log files
+**/*.log
+
+# DOCKER
+temp-prod-dir/*
+/.operations/*
+!/.operations/*.tpl
+!/.operations/chart
+
+# CDN
+dist/cloudeditor-cdn.*
+
+# ECLIPSE/APTANA STUDIO
+.project
+
+# WEBSTORM
+.idea/
+*.iml
+
+# SUBLIME
+/*.sublime-project
+*.sublime-workspace
+
+# VIM
+*.sw?
+
+# MAC
+.DS_Store
+*.orig
+
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
